@@ -1,4 +1,5 @@
-import makeHome from './home.js';
+import {makeHome, loadHome} from './home.js'
+
 
 const makeHeader = () => {
     const header = document.createElement('div');
@@ -13,24 +14,32 @@ const makeHeader = () => {
 
 const fillNavBar = (e) => {
 
-    const homeBtn = e.appendChild(document.createElement('button'))
-    const menuBtn = e.appendChild(document.createElement('button'))
-    const contactBtn = e.appendChild(document.createElement('button'))
+    const homeBtn = e.appendChild(document.createElement('button'));
+    const menuBtn = e.appendChild(document.createElement('button'));
+    const contactBtn = e.appendChild(document.createElement('button'));
 
     homeBtn.classList.add('navbtn');
     menuBtn.classList.add('navbtn');
     contactBtn.classList.add('navbtn');
 
-    homeBtn.textContent = 'HOME'
-    menuBtn.textContent ='MENU'
-    contactBtn.textContent = 'CONTACT'
+    homeBtn.textContent = 'HOME';
+    menuBtn.textContent ='MENU';
+    contactBtn.textContent = 'CONTACT';
 
+    const content = document.getElementById("content");
+
+    homeBtn.addEventListener('click', () => {
+        content.appendChild(loadHome());
+    })
+
+    return {homeBtn, menuBtn, contactBtn};
 };
 
 const makeNavBar = () => {
     const navbar = document.createElement('nav');
     
     fillNavBar(navbar);
+
 
     return navbar
 };

@@ -19,6 +19,7 @@ html {
     font-size: 8vh;
     text-align: center;
     width: 100%;
+    max-width: 100%;
     background-color: rgb(92, 92, 92);
 }
 
@@ -27,6 +28,8 @@ nav {
     display: flex;
     justify-content: center;
     gap: 5vh;
+    width: 100%;
+    max-width: 100%;
     padding-bottom: 3vh;
 }
 
@@ -44,6 +47,10 @@ nav {
     transition: transform 0.3s;   
 }
 
+.navbtn:active {
+    border-bottom: solid white
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -54,6 +61,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 80vh;
 }
 
 
