@@ -3,12 +3,13 @@ import {loadMenu} from './menu'
 import {loadContact} from './contact.js';
 
 
+
 const makeHeader = () => {
     const header = document.createElement('div');
     header.setAttribute('id', 'header');
     header.classList.add('header')
 
-    header.textContent = "Bob's Burger";
+    header.textContent = "Birjir";
 
     header.append(makeNavBar());
     return header;

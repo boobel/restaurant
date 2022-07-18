@@ -1,23 +1,32 @@
+import { makeFooter } from "./web";
+import Maker from './maker.jpg';
+
+
+
 
 const makeHome = () => {
     const home = document.createElement('div');
     const about = document.createElement('div');
-    const hours = document.createElement('div');
 
-    about.appendChild(makeHead('About Us'));
-    about.appendChild(makeParagraph('Bob and family has been creating, making and perfecting sandwiches since 1910, all for your pleasure!'));
+    about.appendChild(makeParagraph('Scientifically develop to perfection, introducing Birjir patty. Completely halal, for your pleasure.'));
 
-    hours.appendChild(makeHead('Hours'));
-    hours.appendChild(makeParagraph('Weekdays: 10 AM - 10 PM'));
-    hours.appendChild(makeParagraph('Weekends: 12 PM - 1 AM'));
+        
+    const Img = new Image();
+    Img.src = Maker;
+    Img.setAttribute('id','maker')
+
+    
+
+
 
 
     home.setAttribute('id', 'home');
     home.classList.add('home');
 
-    home.appendChild(makeHead("Your favourite sandwich at hands reach"));
+
+    home.appendChild(makeHead("World's First Halal Burger"));
     home.appendChild(about);
-    home.appendChild(hours);
+    home.appendChild(Img);
 
 
     return home;
@@ -28,6 +37,7 @@ const loadHome = () => {
     main.textContent = '';
 
     main.appendChild(makeHome());
+    main.appendChild(makeFooter());
 
     return main
 };
@@ -41,8 +51,8 @@ const makeHead = (text) => {
 };
 
 const makeParagraph = (text) => {
-    const par = document.createElement('p');
-    par.textContent = text;
+    const par = document.createElement('a');
+    par.innerHTML = text;
 
     return par;
 };

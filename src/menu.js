@@ -4,14 +4,14 @@ import Icon from './icon.png';
 
 //RUDIMENTARY ITEMS DATABASE
 var menuItems = ['','','','','','','','','',''];
-var names = ['A','B','C','D','E','F','G','H','I','J'];
+var names = ['The Classic','The Upgrade','The Extra','The Bold','The Odd','The Vegan','The Exquisite','The Burn','The Extravagant','The Royal'];
 var prices = [12,15,17,10,24,32,30,15,50,64];
-var bases = ['Classic','Classic','Classic','Classic','Classic','Classic','Classic','Classic','Classic','Classic'];
+var bases = ['Classic','Classic','Sourdough','Brioche','Brioche','Classic','English Muffin','Classic','Ciabatta','Onion Bun'];
 var toppings = [
+['Beef patty', ' tomato', ' onion', 'pickle'],
 ['Beef patty', 'gouda cheese', 'lettuce', 'tomato', 'onion'],
-['Beef patty', 'gouda cheese', 'lettuce', 'tomato', 'onion'],
-['Beef patty', 'gouda cheese', 'lettuce', 'tomato', 'onion'],
-['Beef patty', 'gouda cheese', 'lettuce', 'tomato', 'onion'],
+['Sliced Steak' , 'gouda cheese', 'Cabbage', 'tomato'],
+['Turkey Patty', 'chedar cheese', 'jalapeno', 'tomato', 'onion'],
 ['Beef patty', 'gouda cheese', 'lettuce', 'tomato', 'onion'],
 ['Beef patty', 'gouda cheese', 'lettuce', 'tomato', 'onion'],
 ['Beef patty', 'gouda cheese', 'lettuce', 'tomato', 'onion'],

@@ -1,29 +1,31 @@
 html {
     background-color: rgb(46, 46, 46);
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;   
+    font-family: 'Courier New', Courier, monospace
 }
 
-
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
 
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
-    margin: 0;
+    height: 100%;
 }
 
 .header {
     position: fixed;
     top: 0;
     padding: 10px;
-    font-size: 8vh;
+    font-size: 400%;
     text-align: center;
-    width: 100%;
-    max-width: 100%;
-    background-color: rgb(92, 92, 92);
+    height: 15%;
+
+    background-color: rgb(29, 26, 26);
     z-index: 200;
 }
 
@@ -69,14 +71,28 @@ nav {
 
 .home {
     display: flex;
-
+    margin-top:170px;
+    margin-bottom: 70px;
     flex-direction: column;
-    width: 80vh;
+    width: 80%;
     background-color: white;
     color: black;
     padding: 25px;
+    padding-top: 40px;
+    padding-bottom: 50px;
     box-shadow: 25px 25px black;
     animation: fadeIn 1.5s;
+    text-align: center;
+    gap: 15px;
+}
+
+#maker {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        height: 75%;
+        margin-top: 2vh;
 }
 
 @keyframes fadeIn {
@@ -92,18 +108,21 @@ nav {
 
 
 .menu {
-    position: absolute;
-    top: 28vh;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(1, 1fr);
     z-index: 100;
     background-color: white;
     color: black;
+    margin-top: 170px;
+    margin-bottom: 70px;
     padding: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 150px;
     box-shadow: 25px 25px black;
-    width: 80vh;
+    width: 80%;
     animation: fadeIn 1.5s;
+    gap: 1%;
 }
 
 #item {
@@ -111,22 +130,29 @@ nav {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
-    width: 120%;
+    width: 100%;
+    gap: 15%;
 }
 
 #itemText {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    font-size: 90%;
 }
 
+
 img {
-    height: 100px;
-    width: 100px;
+    height: 25%;
+    width: 25%;
+    margin-left: 50px;
 }
 
 #ItemImg {
-    height: 100px;
-    width: 100px;
+    height: 50%;
+    width: 50%;
 }
 
 
@@ -134,14 +160,19 @@ img {
 /*---------------------------------------------------------------------CONTACT--------------------------------------------------------------------------------------------*/
 
 #contact {
-    position: absolute;
-    top: 28vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 170px;
     background-color: white;
     color: black;
     padding: 25px;
+    padding-bottom: 45px;
     box-shadow: 25px 25px black;
-    width: 80vh;
+    width: 80%;
     animation: fadeIn 1.5s;
+    gap: ;
 }
 
 
@@ -150,12 +181,15 @@ img {
     position: fixed;
     bottom: 0;
     padding: 10px;
-    background-color: rgb(92, 92, 92);
+    background-color: rgb(29, 26, 26);
     width: 100%;
     text-align: center;
 }
 
 #map {
-    width: 515px;
-    height: 386.5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
 }
