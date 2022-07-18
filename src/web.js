@@ -1,4 +1,6 @@
 import {makeHome, loadHome} from './home.js'
+import {loadMenu} from './menu'
+import {loadContact} from './contact.js';
 
 
 const makeHeader = () => {
@@ -6,7 +8,7 @@ const makeHeader = () => {
     header.setAttribute('id', 'header');
     header.classList.add('header')
 
-    header.textContent = "Sabini's";
+    header.textContent = "Bob's Burger";
 
     header.append(makeNavBar());
     return header;
@@ -22,14 +24,22 @@ const fillNavBar = (e) => {
     menuBtn.classList.add('navbtn');
     contactBtn.classList.add('navbtn');
 
-    homeBtn.textContent = 'HOME';
-    menuBtn.textContent ='MENU';
-    contactBtn.textContent = 'CONTACT';
+    homeBtn.innerHTML = 'HOME';
+    menuBtn.innerHTML ='MENU';
+    contactBtn.innerHTML = 'CONTACT';
 
     const content = document.getElementById("content");
 
     homeBtn.addEventListener('click', () => {
         content.appendChild(loadHome());
+    })
+
+    menuBtn.addEventListener('click', () => {
+        content.append(loadMenu())
+    })
+
+    contactBtn.addEventListener('click', () => {
+        content.appendChild(loadContact())
     })
 
     return {homeBtn, menuBtn, contactBtn};
@@ -50,6 +60,7 @@ const makeMain = () => {
     main.classList.add('main')
 
     main.appendChild(makeHome());
+    main.appendChild(makeFooter());
 
     return main;
 };
@@ -66,11 +77,18 @@ const makeFooter = () => {
 
 
 const webInit = () => {
-    const content = document.getElementById("content");
+    const content = document.querySelector("#content");
+
+
 
     content.appendChild(makeHeader());
     content.appendChild(makeMain());
-    content.appendChild(makeFooter());
+
+
+    return content
 }
 
-export default webInit;
+
+
+export {webInit, makeFooter};
+
