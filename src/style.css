@@ -20,11 +20,13 @@ button {
 .header {
     position: fixed;
     top: 0;
+    left: 35%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     font-size: 400%;
     text-align: center;
     height: 15%;
-
     background-color: rgb(29, 26, 26);
     z-index: 200;
 }
@@ -116,9 +118,9 @@ nav {
     background-color: white;
     color: black;
     margin-top: 170px;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
     padding: 25px;
-    padding-bottom: 150px;
+    padding-bottom: 250px;
     box-shadow: 25px 25px black;
     width: 80%;
     animation: fadeIn 1.5s;
@@ -165,6 +167,7 @@ img {
     justify-content: center;
     flex-direction: column;
     margin-top: 170px;
+    margin-bottom: 70px;
     background-color: white;
     color: black;
     padding: 25px;
@@ -189,6 +192,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
 }
