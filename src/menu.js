@@ -9,7 +9,7 @@ var prices = [12,15,17,10,24,32,30,15,50,64];
 var bases = ['Classic','Classic','Sourdough','Brioche','Brioche','Classic','English Muffin','Classic','Ciabatta','Onion Bun'];
 var toppings = [
 ['Beef patty', ' tomato', ' onion', 'pickle'],
-['Beef patty', 'gouda cheese', 'lettuce', 'tomato', 'onion'],
+['Beef patty', ' gouda cheese', ' lettuce', ' tomato', ' onion'],
 ['Sliced Steak' , 'gouda cheese', 'Cabbage', 'tomato'],
 ['Turkey Patty', 'chedar cheese', 'jalapeno', 'tomato', 'onion'],
 ['Beef patty', 'gouda cheese', 'lettuce', 'tomato', 'onion'],
