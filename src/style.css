@@ -108,6 +108,10 @@ nav {
     }
 }
 
+
+h1 {
+    word-break: normal !important;
+}
 /*---------------------------------------------------------------------MENU--------------------------------------------------------------------------------------------*/
 
 
@@ -120,7 +124,6 @@ nav {
     background-color: white;
     color: black;
     margin-top:50px;
-    padding: 25px;
     width: 80%;
     box-shadow: 25px 25px black;
     animation: fadeIn 1.5s;
@@ -147,6 +150,7 @@ nav {
     align-items: flex-start;
     flex-direction: column;
     width: 30%;
+    font-size: 1.5vw;
 }
 
 
@@ -155,10 +159,7 @@ img {
     width: 20%;
 }
 
-#ItemImg {
-    height: 2000%;
-    width: 2000%;
-}
+
 
 
 
